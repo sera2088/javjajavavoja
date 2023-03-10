@@ -1,11 +1,11 @@
 package talk.dto;
 
 public class TalkPageDTO {
-	private int currentPage; // 현재페이지
-	private int totalCount; // 총 레코드수
-	private int blockCount = 5; // 한 페이지에 보여줄 레코드 수
-	private int blockPage = 3; // 한 블록에 보여줄 페이지 수
-	private int totalPage; // 총 페이지수
+	private int currentPage; // 현재 페이지
+	private int totalCount; // 총 레코드 수
+	private int blockCount = 6; // 한 페이지에 보여줄 레코드 수
+	private int blockPage = 5; // 한 블록에 보여줄 페이지 수
+	private int totalPage; // 총 페이지 수
 	private int startRow; // 시작 레코드 번호
 	private int endRow; // 끝 레코드 번호
 	private int startPage; // 한 블록의 시작 페이지 번호
@@ -23,15 +23,15 @@ public class TalkPageDTO {
 		this.currentPage = currentPage;
 		this.totalCount = totalCount;
 		
-		// 총 페이지수
+		// 총 페이지 수 
 		totalPage = totalCount / blockCount + (totalCount % blockCount == 0 ? 0 : 1);
 		if(totalPage<currentPage)
 		  this.currentPage = totalPage;
 
-		// 시작레코드
+		// 시작 레코드
 		startRow = (this.currentPage - 1) * blockCount + 1;
 
-		// 끝레코드
+		// 끝 레코드
 		endRow = startRow + blockCount - 1;
 
 	
@@ -44,7 +44,7 @@ public class TalkPageDTO {
 		if (totalPage < endPage)
 			endPage = totalPage;
 
-		// 리스트에서에 출력번호
+		// 리시트에서 출력번호
 		number = totalCount - (this.currentPage - 1) * blockCount;
 	}
 

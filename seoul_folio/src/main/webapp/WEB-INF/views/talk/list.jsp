@@ -84,41 +84,34 @@
 
 		</div>
 
-		<ul class="talk_page">
+		<div class="pageList">
 
 			<!-- 이전 출력 시작 -->
 			<c:if test="${pv.startPage>1}">
-				<li class="page-item"><a class="page-link"
-					href="list.do?currentPage=${pv.startPage-pv.blockPage}">Prev</a></li>
+				<a href="list.do?currentPage=${pv.startPage-pv.blockPage}">&lt;</a>
 			</c:if>
 			<!-- 이전 출력 끝 -->
 
 			<!-- 페이지 출력 시작 -->
 			<c:forEach var="i" begin="${pv.startPage}" end="${pv.endPage}">
-				<li><c:choose>
+			  <c:choose>
 						<c:when test="${i==pv.currentPage}">
-							<a class="page-link page-item active"
-								href="list.do?currentPage=${i}">${i}</a>
+							<a href="list.do?currentPage=${i}">${i}</a>
 						</c:when>
 						<c:otherwise>
-							<a class="page-link" href="list.do?currentPage=${i}">${i}</a>
+							<a href="list.do?currentPage=${i}">${i}</a>
 						</c:otherwise>
-					</c:choose></li>
+					</c:choose>
 			</c:forEach>
 			<!-- 페이지 출력 끝 -->
 
 			<!-- 다음 출력 시작 -->
 			<c:if test="${pv.endPage<pv.totalPage}">
-				<li><a class="page-link"
-					href="list.do?currentPage=${pv.startPage+pv.blockPage}">Next</a></li>
+				<a href="list.do?currentPage=${pv.startPage+pv.blockPage}">&gt;</a>
 			</c:if>
 			<!-- 다음 출력 끝 -->
-		</ul>
-
-		<div class="pageList">
-			<a href="#">&lt;</a> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a>
-			<a href="#">4</a> <a href="#">5</a> <a href="#">&gt;</a>
 		</div>
+
 		<div class="bottom">
 			<p>
 				<a href="">로그아웃</a><br /> 상호명 (주) 서울폴리오 | 주소 서울시 은평구 응암3동 673-16호 |
