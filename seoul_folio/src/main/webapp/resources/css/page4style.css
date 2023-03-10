@@ -1,0 +1,94 @@
+/* 공통 */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "NanumSquare", sans-serif;
+  background-image: url("../image/backimg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+body {
+  color: #333;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+#wrap {
+  position: relative;
+}
+
+.box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.boxwrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logobox {
+  width: 306px;
+  border-bottom: 1.5px solid black;
+  text-align: center;
+}
+
+.logoimg {
+  width: 120px;
+}
+
+p {
+  margin-top: 0;
+  color: gray;
+}
+
+.account {
+  display: block;
+  margin-bottom: 3px;
+  width: 303px;
+  height: 35px;
+  border-color: black;
+}
+
+#id,
+#pw {
+  border-width: 0px 0px 1.5px 0px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#loginBtn {
+  width: 306px;
+  margin-top: 21px;
+  color: white;
+  background-color: black;
+  border: 5px solid black;
+}
+#loginBtn:hover {
+  cursor: pointer;
+}
+
+#signup {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1.5px solid black;
+  text-align: center;
+  height: 30px;
+  padding-top: 5px;
+}
+#signup:hover {
+  cursor: pointer;
+}

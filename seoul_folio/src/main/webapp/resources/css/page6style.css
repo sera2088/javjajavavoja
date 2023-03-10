@@ -1,0 +1,75 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "NanumSquare", sans-serif;
+  background-image: url("../image/backimg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+body {
+  color: #333;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+#wrap {
+  position: relative;
+}
+
+.box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.boxwrap {
+  position: absolute;
+  /* 부모기준 자식 가운데정렬 마법 */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logobox {
+  width: 450px;
+  height: 150px;
+  margin-bottom: 30px;
+}
+.logoimg {
+  width: 150px;
+}
+p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.login {
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  margin-top: -10px;
+  padding-top: 5px;
+  background-color: black;
+  text-decoration: none;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login a {
+  color: white;
+}
+
+.login:hover {
+  cursor: pointer;
+}

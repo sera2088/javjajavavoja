@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- PlaceDaoImp bean 선언 -->
+	<bean id="placeDao" class="place.dao.PlaceDaoImp">
+		<property name="sqlSession" ref="sqlSession" />
+	</bean>
+	
+	<!-- PlaceServiceImp bean 선언 -->
+	<bean id="placeService" class="place.service.PlaceServiceImp">
+		<property name="placeDao" ref="placeDao" />
+	</bean>
+	
+	<!-- PlaceController bean 선언 -->
+	<bean class="place.controller.PlaceController">
+		<property name="placeService" ref="placeService" />
+	</bean>
+	
+</beans>

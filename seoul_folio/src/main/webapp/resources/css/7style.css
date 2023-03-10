@@ -1,0 +1,215 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'NanumSquare', sans-serif;
+}
+
+.wrap {
+  height: 4611px;
+  width: 1920px;
+  transform: translate(-50%, -50%);
+}
+.nav a {
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+header {
+  margin-top: 75px;
+  height: 100px;
+  background-color: black;
+  position: relative;
+}
+
+.logo img {
+  height: 60px;
+  position: absolute;
+  /* 부모기준 자식 가운데정렬 마법 */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navwrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  height: 75px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  /* background-color: antiquewhite; */
+}
+
+.nav {
+  position: absolute;
+  /* 부모기준 자식 가운데정렬 마법 */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+}
+
+.nav span {
+  float: left;
+  margin-right: 30px;
+}
+
+.nav_right {
+  position: fixed;
+  width: 400px;
+  /* 부모기준 자식 가운데정렬 마법 */
+  left: 900px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav_right > div {
+  float: left;
+}
+
+/* .nav_right {
+  height: 75px;
+} */
+
+.search {
+  /* position: absolute; */
+  height: 75px;
+  /* background-color: blue; */
+  line-height: 75px;
+  width: 75px;
+  margin: 1px;
+}
+
+.search i {
+  /* position: relative; */
+  /* 부모기준 자식 가운데정렬 마법 */
+  /* left: 50%; */
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%); */
+  margin-top: 25px;
+  margin-left: 20px;
+  font-size: 35px;
+}
+
+.nav_feed_profile {
+  margin-top: 7.5px;
+  width: 60px;
+  height: 60px;
+  /* background-color: aqua; */
+}
+
+.nav_feed_profile img {
+  border: 2px solid rgb(241, 241, 241);
+  border-radius: 20%;
+}
+
+/*  */
+.main_img img {
+  width: 1520px;
+  height: 500px;
+  margin: auto;
+  display: block;
+}
+
+.categoryBest {
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-size: larger;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.imgText {
+  width: 1520px;
+  height: 200px;
+  top: -200px;
+  margin: auto;
+  position: relative;
+  background-color: #010202;
+  opacity: 50%;
+}
+
+.imgText p {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  top: 43%;
+  left: 20%;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.imgText p:nth-child(2) {
+  border-bottom: 2px solid white;
+}
+
+.imgText a {
+  color: #fff;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  border-top: solid rgb(181, 169, 181) 1.5px;
+}
+
+div.postList {
+  display: flex;
+  justify-content: center;
+}
+
+table img {
+  width: 343px;
+  height: 252px;
+  margin: 30px;
+}
+
+.postText {
+  display: flex;
+  justify-content: center;
+}
+
+.postText p:nth-child(1) {
+  margin-right: 200px;
+  margin-left: 400px;
+  font-size: 30px;
+}
+
+.postText a {
+  line-height: 150px;
+  text-decoration: none;
+}
+
+.postText p:nth-child(2) {
+  margin-bottom: -50px;
+  padding: 0px;
+}
+
+td p:nth-of-type(2) {
+  font-weight: 1000;
+  font-size: larger;
+}
+
+.pageList {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pageList a {
+  padding: 7px;
+  text-decoration: none;
+  color: #b3b2b1;
+}

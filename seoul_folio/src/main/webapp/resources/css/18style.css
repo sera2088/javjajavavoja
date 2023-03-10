@@ -1,0 +1,231 @@
+<style > body {
+  margin: 0;
+  padding: 0;
+  font-family: "NanumSquare", sans-serif;
+}
+body {
+  color: #333;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* body *{
+    outline: 2px dashed blue;
+} */
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li {
+  float: left;
+}
+
+header {
+  margin-top: 75px;
+  height: 100px;
+  background-color: black;
+  position: relative;
+}
+
+.logo img {
+  height: 60px;
+  position: absolute;
+  /* 부모기준 자식 가운데정렬 마법 */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navwrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  height: 75px;
+  /* background-color: antiquewhite; */
+}
+
+.nav {
+  position: absolute;
+  /* 부모기준 자식 가운데정렬 마법 */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+}
+
+.nav span {
+  float: left;
+  margin-right: 30px;
+}
+
+.nav_right {
+  position: absolute;
+  /* float: right; */
+  right: 15%;
+}
+
+.nav_right > div {
+  float: left;
+}
+
+/* .nav_right {
+  height: 75px;
+} */
+
+.search {
+  /* position: absolute; */
+  height: 75px;
+  /* background-color: blue; */
+  line-height: 75px;
+  width: 75px;
+  margin: 1px;
+}
+
+.search i {
+  /* position: relative; */
+  /* 부모기준 자식 가운데정렬 마법 */
+  /* left: 50%; */
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%); */
+  margin-top: 25px;
+  margin-left: 20px;
+  font-size: 35px;
+}
+
+.nav_feed_profile {
+  margin-top: 7.5px;
+  width: 60px;
+  height: 60px;
+  /* background-color: aqua; */
+}
+
+.nav_feed_profile img {
+  border: 2px solid rgb(241, 241, 241);
+  border-radius: 20%;
+}
+
+div.wrap {
+  /*전체 컨텐츠를 묶는 부분*/
+  position: relative;
+  height: 3467px;
+  left: 0px;
+  top: 0px;
+  padding: auto;
+  margin: auto;
+}
+
+/* --------- */
+div.profile {
+  /*피드작성페이지 프로필구역*/
+  position: absolute;
+  transform: translate(-50%, 20%);
+  /* 기존 스타일 */
+  left: 50%;
+  height: 300px;
+  width: 300px;
+  font-size: 12px;
+}
+
+div.profile img {
+  /*피드 작성페이지 프로필사진*/
+  width: 60.84px;
+  height: 60.84px;
+  border-radius: 30%;
+  transform: translate(-10%, 0%);
+  margin-top: -15px;
+}
+div.profile > p {
+  /*피드 작성 페이지 프로필구역 텍스트*/
+  display: block;
+  /*"FEED" 텍스트 스타일*/
+  margin-left: 125px;
+}
+
+div.profile > p:nth-of-type(1) {
+  font-size: 20px;
+  font-weight: 530;
+  margin-top: 30px;
+}
+
+div.profile > p:nth-of-type(3) {
+  position: relative;
+  top: -10px;
+}
+
+.feedPhotos {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  transform: translate(-50%, 55%);
+  left: 50%;
+}
+.feedPhotos img {
+  width: 250px;
+  height: 250px;
+}
+
+.feedPhotos div {
+  display: inline-block;
+  margin: 6.3px;
+}
+
+.like_Order {
+  transform: translate(-50%, 700%);
+  left: 50%;
+  width: 800px;
+  height: 50px;
+  position: relative;
+}
+
+.like_Order p {
+  display: inline-block;
+  margin: 10px;
+}
+.like_Order p:nth-of-type(2) {
+  float: right;
+  position: relative;
+  top: 40%;
+}
+
+.like_Order p:nth-of-type(1) span {
+  display: inline-block;
+  padding: 5px;
+}
+.bookmark {
+  display: inline;
+  padding-left: 30px;
+  padding: 20%;
+  font-size: 20px;
+  color: gray;
+}
+.bookmark2 {
+  display: inline;
+  font-size: 20px;
+}
+.line {
+  width: 785.5px;
+  height: 3px;
+  background-color: rgb(241, 241, 241);
+  position: relative;
+  top: 400px;
+  margin: auto;
+}
+.pageList {
+  transform: translate(-50%, 350%);
+  position: relative;
+  width: 200px;
+  left: 52.9%;
+  padding: 60px;
+}
+.footer {
+  position: relative;
+  margin-top: 30%;
+  height: 200px;
+  background-color: black;
+}

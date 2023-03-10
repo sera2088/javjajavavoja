@@ -1,0 +1,485 @@
+/* 공통 */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'NanumSquare', sans-serif;
+}
+body {
+  color: #333;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.wrap {
+  position: relative;
+}
+
+/* body *{
+    outline: 2px dashed blue;
+} */
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li {
+  float: left;
+}
+
+header {
+  margin-top: 75px;
+  height: 100px;
+  background-color: black;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.logo img {
+  height: 60px;
+  position: absolute;
+  /* 부모기준 자식 가운데정렬 마법 */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home {
+  font-weight: bolder;
+}
+
+.navwrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  height: 75px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  /* background-color: antiquewhite; */
+}
+
+.nav {
+  position: absolute;
+  /* 부모기준 자식 가운데정렬 마법 */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+}
+
+.nav span {
+  float: left;
+  margin-right: 30px;
+}
+
+.nav_right {
+  position: absolute;
+  /* float: right; */
+  right: 15%;
+}
+
+.nav_right > div {
+  float: left;
+}
+
+/* .nav_right {
+  height: 75px;
+} */
+
+.search {
+  /* position: absolute; */
+  height: 75px;
+  /* background-color: blue; */
+  line-height: 75px;
+  width: 75px;
+  margin: 1px;
+}
+
+.search i {
+  /* position: relative; */
+  /* 부모기준 자식 가운데정렬 마법 */
+  /* left: 50%; */
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%); */
+  margin-top: 25px;
+  margin-left: 20px;
+  font-size: 35px;
+}
+
+.nav_feed_profile {
+  margin-top: 7.5px;
+  width: 60px;
+  height: 60px;
+  /* background-color: aqua; */
+}
+
+.nav_feed_profile img {
+  border: 2px solid rgb(241, 241, 241);
+  border-radius: 20%;
+}
+
+.user_id {
+  font-weight: bolder;
+}
+
+.search_result {
+  height: 30px;
+  margin-top: 250px;
+  margin-bottom: 300px;
+}
+
+.search_result_copy {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.search_feed {
+  height: 25px;
+  top: 50px;
+  margin-bottom: 100px;
+}
+
+.search_feed_copy {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.feedwrap {
+  width: 1215px;
+  height: 815px;
+  position: relative;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feed1,
+.feed2 {
+  float: left;
+}
+
+.feed2 {
+  margin-left: 15px;
+}
+
+.feed_img {
+  width: 600px;
+  height: 600px;
+}
+
+/* 피드라인 */
+.feed_line1,
+.feed_line2 {
+  width: 600px;
+  height: 1px;
+  background-color: rgb(135, 135, 135);
+}
+
+.feed_line1 {
+  margin-bottom: 20px;
+}
+
+.feed_line2 {
+  margin-top: 20px;
+}
+
+/* 피드 프로필 */
+.feed_profile {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+.feed_profile_img {
+  border-radius: 20%;
+  border: 2px solid rgb(241, 241, 241);
+}
+
+/* 피드 바텀 */
+
+.feed_bottom {
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+.feed_good {
+  display: inline;
+  font-size: 30px;
+}
+
+.view_all {
+  display: inline;
+  float: right;
+  margin-top: 12.5px;
+}
+
+.search_feed {
+  margin-bottom: 100px;
+}
+
+.search_feed_copy {
+  margin-top: 300px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.search_line {
+  width: 1280px;
+  height: 1px;
+  background-color: rgb(135, 135, 135);
+  margin-bottom: 50px;
+}
+
+/* 에디터 추천 */
+.editor_wrap {
+  top: 300px;
+  width: 1280px;
+  margin-top: 450px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 커피 */
+
+.coffee {
+  height: 340px;
+}
+
+.food {
+  height: 300px;
+}
+
+.lodgin {
+  height: 300px;
+}
+
+.coffee_copy {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.user_id {
+  font-weight: bolder;
+}
+
+.coffee_img_wrap {
+  width: 1280px;
+
+  /* overflow: hidden; */
+}
+
+.coffee_img {
+  width: 3000px;
+}
+
+.coffee_img_set {
+  width: 400px;
+  height: 35px;
+}
+
+.coffee_img_set {
+  float: left;
+}
+
+.coffee_img_set:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+.coffee_img_wrap img {
+  width: 400px;
+  height: 300px;
+  background-color: blue;
+  float: left;
+}
+
+.coffee_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.coffee_price {
+  line-height: 0px;
+}
+
+/* 맞춤숙소 */
+
+.lodgin {
+  margin-top: 90px;
+}
+
+.lodgin_copy {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.user_id {
+  font-weight: bolder;
+}
+
+.lodgin_img_wrap {
+  width: 1280px;
+  /* overflow: hidden; */
+}
+
+.lodgin_img {
+  width: 3000px;
+}
+
+.lodgin_img_set {
+  width: 400px;
+  height: 375px;
+}
+
+.lodgin_img_set {
+  float: left;
+}
+
+.lodgin_img_set:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+.lodgin_img_wrap img {
+  width: 400px;
+  height: 300px;
+  background-color: blue;
+  float: left;
+}
+
+.lodgin_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lodgin_price {
+  line-height: 0px;
+}
+
+/* 맞춤맛집 */
+
+.food {
+  margin-top: 40px;
+}
+
+.food_copy {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.user_id {
+  font-weight: bolder;
+}
+
+.food_img_wrap {
+  width: 1280px;
+  /* overflow: hidden; */
+}
+
+.food_img {
+  width: 3000px;
+}
+
+.food_img_set {
+  width: 400px;
+  height: 375px;
+}
+
+.food_img_set {
+  float: left;
+}
+
+.food_img_set:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+.food_img_wrap img {
+  width: 400px;
+  height: 300px;
+  background-color: blue;
+  float: left;
+}
+
+.food_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.food_price {
+  line-height: 0px;
+}
+
+/* 맞춤 액티비티 */
+
+.activity {
+  margin-top: 300px;
+  position: relative;
+}
+
+.activity_copy {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.activity_copy div {
+  display: inline;
+}
+
+.activity_id {
+  font-weight: bolder;
+}
+
+.activity_line {
+  width: 1280px;
+  height: 1px;
+  background-color: rgb(135, 135, 135);
+  margin-bottom: 50px;
+}
+
+.activity_img_wrap {
+  width: 1280px;
+  /* overflow: hidden; */
+}
+
+.activity_img {
+  width: 3000px;
+}
+
+.activity_img_set {
+  width: 525px;
+  height: 817.5px;
+  margin-bottom: 200px;
+}
+
+.activity_img_set {
+  float: left;
+}
+
+.activity_img_wrap img {
+  width: 525px;
+  height: 742.5px;
+  background-color: blue;
+  float: left;
+}
+
+.activity_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.activity_price {
+  line-height: 0px;
+}

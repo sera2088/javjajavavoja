@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="place">
+
+	<!-- 현재 테이블에 저장된 레코드의 수를 리턴한다. -->
+	<select resultType="int" id="count">
+		SELECT count(*) FROM placeList 
+	</select>
+
+	<!-- 현재 테이블에 저장되어있는 전체 데이터를 리턴한다. -->
+	<select resultType="place.dto.PlaceDTO" id="list" parameterType="place.dto.PlaceDTO">
+		SELECT * FROM placeList
+	</select>
+
+</mapper>

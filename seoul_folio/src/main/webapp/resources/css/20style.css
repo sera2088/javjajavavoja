@@ -1,0 +1,266 @@
+body {
+  /*body 스타일*/
+  margin: 0;
+  padding: 0;
+
+  font-family: 'NanumSquare', sans-serif;
+}
+
+.wrap {
+  position: relative;
+  height: 1300px;
+  left: 0px;
+  top: 0px;
+  padding: auto;
+  margin: auto;
+}
+
+header {
+  /*메인로고*/
+  margin-top: 75px;
+  height: 100px;
+  background-color: black;
+  position: relative;
+}
+
+.logo img {
+  /*메인로고 이미지*/
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.navwrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  height: 75px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  /* background-color: antiquewhite; */
+}
+
+.nav {
+  position: absolute;
+  /* 부모기준 자식 가운데정렬 마법 */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+}
+
+.nav span {
+  float: left;
+  margin-right: 30px;
+}
+
+.nav_right {
+  position: fixed;
+  width: 400px;
+  /* 부모기준 자식 가운데정렬 마법 */
+  left: 900px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+a {
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+.nav_right > div {
+  /*검색 / 프로필사진*/
+  float: left;
+}
+
+.search {
+  /*검색*/
+  height: 75px;
+  line-height: 75px;
+  width: 75px;
+  margin: 1px;
+}
+
+.search i {
+  /*돋보기아이콘*/
+  margin-top: 25px;
+  margin-left: 20px;
+  font-size: 35px;
+}
+
+.nav_feed_profile {
+  /*프로필사진*/
+  margin-top: 7.5px;
+  width: 60px;
+  height: 60px;
+}
+
+.nav_feed_profile img {
+  /*프로필사진*/
+  border: 2px solid rgb(241, 241, 241);
+  border-radius: 20%;
+}
+
+div.logo {
+  /*메인로고*/
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  height: 100px;
+  background: #010202;
+}
+/* ---------------------아래 footer 영역------------------- */
+div.bottom {
+  /* 아래여백 */
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 90%;
+  bottom: 0%;
+  height: 200px;
+  background: #010202;
+  color: white;
+}
+
+div.bottom p {
+  position: relative;
+  top: 25%;
+  line-height: 25px;
+  width: 1000px;
+  left: 50%;
+  transform: translateX(-45%);
+  font-size: small;
+}
+
+div.bottom a {
+  font-size: 15px;
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* ------------------------------------------------------ */
+
+.locationsearch {
+  /* "search" 텍스트 */
+  position: absolute;
+  left: 50%;
+  top: 14.8%;
+  font-weight: 400;
+  font-size: 36.3597px;
+
+  transform: translate(-50%, -50%);
+}
+
+div.location {
+  /* "상세위치" 텍스트*/
+  position: absolute;
+  left: 50%;
+  top: 19%;
+  font-weight: 400;
+  font-size: 18.6166px;
+  transform: translate(-50%, -50%);
+}
+
+.select {
+  /* 지역선택 select 영역 */
+  position: absolute;
+  left: 50%;
+  top: 23.6%;
+  width: 547px;
+  height: 49px;
+  transform: translate(-50%, -50%);
+}
+
+.select select {
+  /* select 태그 */
+  float: left;
+  width: 220px;
+  height: 40px;
+  margin-left: 37px;
+}
+
+p.category {
+  /* "카테고리" 텍스트 */
+  position: absolute;
+  left: 50%;
+  top: 27%;
+  transform: translate(-50%, -50%);
+}
+
+div.category_check {
+  /* 카테고리 선택 영역 */
+  position: absolute;
+  left: 50%;
+  top: 33.04%;
+  transform: translate(-50%, -50%);
+}
+
+div.category_check p {
+  /* 카테고리 선택 영역 텍스트 */
+  text-align: center;
+  line-height: 45px;
+  display: inline-block;
+  width: 90px;
+  height: 45px;
+  margin: 10px;
+  background: #fefbe5;
+  border-radius: 10px;
+}
+
+div.category_check p:hover {
+  text-align: center;
+  line-height: 45px;
+  display: inline-block;
+  width: 90px;
+  height: 45px;
+  margin: 10px;
+  background: #d68cc7;
+  border-radius: 10px;
+}
+
+div.category_check input {
+  /* checkbox 숨김 */
+  display: none;
+}
+
+div.tagbox {
+  /* 태그 영역 */
+  position: absolute;
+  top: 55.56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.tagbox p {
+  /* 태그 영역 텍스트 */
+  text-align: center;
+}
+
+div.selectedtag {
+  /* 선택된 태그 영역 */
+  width: 522px;
+  height: 45.47px;
+  background: #fefbe5;
+}
+
+div.taglist {
+  /* 전체 태그영역 */
+  background: #fefbe5;
+  width: 522px;
+  height: 327.52px;
+
+  left: 48.41%;
+}
+
+input[type='submit'] {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border: none;
+  background-color: #f8f3c9;
+}
