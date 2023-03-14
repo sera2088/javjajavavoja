@@ -24,11 +24,11 @@
             <span>|</span>
             <span class="coffeee"><a href="${path}/place/placelist.do">커피</a></span>
             <span>|</span>
-            <span class="restaurant"><a href="${path}/place/placelist.do">맛집</a></span>
+            <span class="restaurant"><a href="${path}/place/jmt.do">맛집</a></span>
             <span>|</span>
-            <span class="atv"><a href="${path}/place/placelist.do">액티비티</a></span>
+            <span class="atv"><a href="${path}/place/act.do">액티비티</a></span>
             <span>|</span>
-            <span class="hotel"><a href="${path}/place/placelist.do">숙소</a></span>
+            <span class="hotel"><a href="${path}/place/hotel.do">숙소</a></span>
             <span>|</span>
             <span class="feed"><a href="#">피드</a></span>
             <span>|</span>

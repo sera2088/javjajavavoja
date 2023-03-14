@@ -27,6 +27,18 @@ public class PlaceDaoImp implements PlaceDAO{
 	public List<PlaceDTO> list(PageDTO pv) {
 		return sqlSession.selectList("place.list", pv);
 	}
+	@Override
+	public List<PlaceDTO> list1(PageDTO pv) {
+		return sqlSession.selectList("place.jmt", pv);
+	}
+	@Override
+	public List<PlaceDTO> list2(PageDTO pv) {
+		return sqlSession.selectList("place.act", pv);
+	}
+	@Override
+	public List<PlaceDTO> list3(PageDTO pv) {
+		return sqlSession.selectList("place.hotel", pv);
+	}
 //
 //	@Override
 //	public void insertPlace(PlaceDTO dto) {

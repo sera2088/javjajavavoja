@@ -6,13 +6,57 @@
 <mapper namespace="place">
 
 	<!-- 현재 테이블에 저장된 레코드의 수를 리턴한다. -->
-	<select resultType="int" id="count">
+	<select id="count" resultType="int" >
 		SELECT count(*) FROM placeList 
 	</select>
 
+
 	<!-- 현재 테이블에 저장되어있는 전체 데이터를 리턴한다. -->
-	<select resultType="place.dto.PlaceDTO" id="list" parameterType="place.dto.PlaceDTO">
-		SELECT * FROM placeList
-	</select>
+  <select id="list" parameterType="place.dto.PageDTO" resultType="place.dto.PlaceDTO">
+  	<![CDATA[
+	  SELECT b.*
+	  FROM(SELECT rownum AS rm , a.*
+	  	   FROM(SELECT * FROM placeCafe
+	  	                  WHERE placeCafe.categori='cafe'
+	  			 ORDER BY Num DESC)a)b
+	  WHERE b.rm>=#{startRow} AND b.rm<=#{endRow}
+	 ]]>
+  </select>
+  
+<select id="jmt" parameterType="place.dto.PageDTO" resultType="place.dto.PlaceDTO">
+     <![CDATA[
+     SELECT b.*
+     FROM(SELECT rownum AS rm , a.*
+           FROM(SELECT * FROM placeJmt
+                          WHERE placeJmt.categori='jmt'
+                                                 )a)b
+     WHERE b.rm>=#{startRow} AND b.rm<=#{endRow} 
+     ORDER BY Num DESC 
+    ]]>
+  </select>
+  
+  
+     <select id="act" parameterType="place.dto.PageDTO" resultType="place.dto.PlaceDTO">
+  	<![CDATA[
+	  SELECT b.*
+	  FROM(SELECT rownum AS rm , a.*
+	  	   FROM(SELECT * FROM placeList
+	  	                  WHERE placeList.categori='act'
+	  			 ORDER BY Num DESC)a)b
+	  WHERE b.rm>=#{startRow} AND b.rm<=#{endRow}
+	 ]]>
+  </select>
+  
+       <select id="hotel" parameterType="place.dto.PageDTO" resultType="place.dto.PlaceDTO">
+  	<![CDATA[
+	  SELECT b.*
+	  FROM(SELECT rownum AS rm , a.*
+	  	   FROM(SELECT * FROM placeList
+	  	                  WHERE placeList.categori='hotel'
+	  			 ORDER BY Num DESC)a)b
+	  WHERE b.rm>=#{startRow} AND b.rm<=#{endRow}
+	 ]]>
+  </select>
+  
 
 </mapper>

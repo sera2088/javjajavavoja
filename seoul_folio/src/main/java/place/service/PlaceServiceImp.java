@@ -7,13 +7,13 @@ import place.dto.PageDTO;
 import place.dto.PlaceDTO;
 
 public class PlaceServiceImp implements PlaceService {
-	
+
 	private PlaceDAO placeDao;
-	
+
 	public PlaceServiceImp() {
-		
+
 	}
-	
+
 	public void setPlaceDao(PlaceDAO placeDao) {
 		this.placeDao = placeDao;
 	}
@@ -26,6 +26,21 @@ public class PlaceServiceImp implements PlaceService {
 	@Override
 	public List<PlaceDTO> listProcess(PageDTO pv) {
 		return placeDao.list(pv);
+	}
+
+	@Override
+	public List<PlaceDTO> listProcess1(PageDTO pv) {
+	     return placeDao.list1(pv);
+	}
+
+	@Override
+	public List<PlaceDTO> listProcess2(PageDTO pv) {
+		return placeDao.list2(pv);
+	}
+
+	@Override
+	public List<PlaceDTO> listProcess3(PageDTO pv) {
+		return placeDao.list3(pv);
 	}
 
 //	@Override
@@ -43,4 +58,4 @@ public class PlaceServiceImp implements PlaceService {
 //		
 //	}
 
-}//end class
+}// end class

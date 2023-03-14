@@ -52,7 +52,7 @@
 		</header>
 
 		<p class="categoryBest">
-			이번주 BEST <span class="category">커피</span> POST
+			이번주 BEST <span class="category">맛집</span> POST
 		</p>
 
 		<div class="main_img">
@@ -88,18 +88,18 @@
 								<span class="bookmarkCount">${dto.placeScrab}</span>개 즐겨찾기<span>
 									| </span><span class="review">3</span>개 후기 <span> | </span><span
 									class="rating">${dto.rating}</span>점
+							<span>${dto.placeNum}</span>
 							</p>
 						</td>
 					</tr>
 				</c:forEach>
 			</table>
 		</div>
-
 		<div class="pageList">
 
 			<!-- 이전 출력 시작 -->
 			<c:if test="${pv.startPage>1}">
-				<a href="placelist.do?currentPage=${pv.startPage-pv.blockPage}">&lt;</a>
+				<a href="jmt.do?currentPage=${pv.startPage-pv.blockPage}">&lt;</a>
 			</c:if>
 			<!-- 이전 출력 끝 -->
 
@@ -107,10 +107,10 @@
 			<c:forEach var="i" begin="${pv.startPage}" end="${pv.endPage}">
 				<c:choose>
 					<c:when test="${i==pv.currentPage}">
-						<a href="placelist.do?currentPage=${i}">${i}</a>
+						<a href="jmt.do?currentPage=${i}">${i}</a>
 					</c:when>
 					<c:otherwise>
-						<a href="placelist.do?currentPage=${i}">${i}</a>
+						<a href="jmt.do?currentPage=${i}">${i}</a>
 					</c:otherwise>
 				</c:choose>
 			</c:forEach>
@@ -118,11 +118,11 @@
 
 			<!-- 다음 출력 시작 -->
 			<c:if test="${pv.endPage<pv.totalPage}">
-				<a href="placelist.do?currentPage=${pv.startPage+pv.blockPage}">&gt;</a>
+				<a href="jmt.do?currentPage=${pv.startPage+pv.blockPage}">&gt;</a>
 			</c:if>
 			<!-- 다음 출력 끝 -->
 		</div>
-      
+         
 
 	</div>
 </body>
